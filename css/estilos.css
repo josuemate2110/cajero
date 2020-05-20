@@ -83,7 +83,7 @@ body{
             margin-right: 7px;
             background-color: rgb(210, 210, 210);
             border-radius: 5px;
-            border-width: 2px;
+            border-width: 3px;
             border-color: black;
             border-style: solid;
             font-size: 27px;
@@ -94,7 +94,34 @@ body{
             height: 260px;
             display: flex;
             flex-wrap: wrap;
+            align-items: center;
             justify-content: center;
+}
+.comdopciones{
+            width: 120px;
+            height: 50px;
+            margin-top: 9px;
+            margin-bottom: 7px;
+            border-radius: 5px;
+            border-width: 3px;
+            border-color: black;
+            border-style: solid;
+            font-size: 27px;
+            font-weight: bold;
+            color:white
+            
+}
+#comdcancel{
+            background-color: rgb(255, 0, 0);
+}
+#comdclear{
+            background-color: rgb(255, 125, 0);
+}
+#comdok{
+            background-color: rgb(5, 200, 5);
+}
+#comdvacio{
+            background-color: rgb(100, 100, 100);
 }
 #extras{
             width: 280px;
