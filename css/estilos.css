@@ -1,16 +1,69 @@
 *{
-    margin: 0;
-    padding: 0;
+            margin: 0;
+            padding: 0;
 }
 body{
-             /*align-items: center;*/
             background-image: url("/imagenes/BBVA4.jpg");
             background-repeat: no-repeat;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
 }
+#Cashbox{
+            width: 650px;
+            height: 600px;
+            background-color: rgb(123, 123, 123);
+            border-radius: 43px;
+            border-width: 2px;
+            border-color:rgb(99, 99, 99);
+            border-style: solid;
+}
+#Superior{
+            width: 650px;
+            height: 330px;
+            display: flex;
+}
+#Inferior{
+            width: 650px;
+            height: 270px;
+            display: flex;
+}
+#botizquierda{
+            margin-top: 100px;
+            margin-left: 15px;
+            margin-right: 8px;
+}
+#pantallacentral{
+            width: 500px;
+            height: 280px;
+            margin-top: 5px;
+            background-color: rgb(224, 224, 88);
+            border-radius: 25px;
+            border-width: 10px;
+            border-color: rgb(100, 100, 100);
+            border-style: solid;     
+}
+#botderecha{
+            margin-top: 100px;
+            margin-left: 8px;
+            margin-right: 15px;
+}
+.boton{
+            width: 50px;
+            height: 30px;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid; 
+}
 .flecha{
-    width: 30px;
-    flex: none;
+            width: 35px;
+            height: 25px;
+            flex: none;
 }
