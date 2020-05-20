@@ -3,8 +3,14 @@
     padding: 0;
 }
 body{
-            display: flex;
-            flex-direction: column;
-            background-image: url("/imagenes/BBVA.jpg");
+             /*align-items: center;*/
+            background-image: url("/imagenes/BBVA4.jpg");
             background-repeat: no-repeat;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+}
+.flecha{
+    width: 30px;
+    flex: none;
 }
