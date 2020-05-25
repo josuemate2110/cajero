@@ -18,7 +18,7 @@
                     <button id="flechaizquierda1" class="boton" onclick="retiroScreen()">
                         <img class="flecha" src="/imagenes/flecha.png" alt="">
                     </button>
-                    <button id="flechaizquierda2" class="boton">
+                    <button id="flechaizquierda2" class="boton" onclick="consultaScreen()">
                         <img class="flecha" src="/imagenes/flecha.png" alt="">
                     </button>
                     <button id="flechaizquierda3" class="boton">
@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 </section>
-                <section id="pantalla3" class="pantallacentral" style="display: none;">
+                <section id="pantalla3.1" class="pantallacentral" style="display: none;">
                     <h2 class="title">RETIRO</h2>
                     <br>
                     <div class="boxContainer">
@@ -60,6 +60,70 @@
                         </div>
                         <div class="box">
                             <h3 class="optionsRight">Retiro Dolares</h3>
+                            <br>
+                            <br>
+                            <br>
+                            <h3 class="optionsRight">Cancelar</h3>
+                        </div>
+                    </div>
+                </section>
+                <section id="pantalla3.2" class="pantallacentral" style="display: none;">
+                    <h2 class="title">CONSULTA</h2>
+                    <div class="boxContainer">
+                        <div class="box">
+                            <h4 class="title">Su saldo inicial era:</h4>
+                            <h4 class="title">Su saldo actual es:</h4>
+                        </div>
+                        <div class="box">
+                            <h4 id="inicial" class="title"></h4>
+                            <h4 id="saldo" class="title"></h4>
+                            <br>
+                            <br>
+                            <h3 class="optionsRight">Cancelar</h3>
+                        </div>
+                    </div>
+                </section>
+                <section id="pantalla3.3" class="pantallacentral" style="display: none;">
+                    <h2 class="title">DISCULPE</h2>
+                    <h3 class="title">Area en mantenimiento, ingrese más tarde</h3>
+                    <div class="boxContainer">
+                        <div class="box">
+                        </div>
+                        <div class="box">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3 class="optionsRight">Cancelar</h3>
+                        </div>
+                    </div>
+                </section>
+                <section id="pantalla3.4" class="pantallacentral" style="display: none;">
+                    <h2 class="title">DISCULPE</h2>
+                    <h3 class="title">Area en mantenimiento, ingrese más tarde</h3>
+                    <div class="boxContainer">
+                        <div class="box">
+                        </div>
+                        <div class="box">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3 class="optionsRight">Cancelar</h3>
+                        </div>
+                    </div>
+                </section>
+                <section id="pantalla3.5" class="pantallacentral" style="display: none;">
+                    <h2 class="title">DISCULPE</h2>
+                    <h3 class="title">Area en mantenimiento, ingrese más tarde</h3>
+                    <div class="boxContainer">
+                        <div class="box">
+                        </div>
+                        <div class="box">
+                            <br>
+                            <br>
                             <br>
                             <br>
                             <br>
@@ -84,6 +148,61 @@
                         </div>
                     </div>
                 </section>
+                <section id="pantalla4.1" class="pantallacentral" style="display: none;">
+                    <h2 class="title">INGRESAR MONTO</h2>
+                    <h3 class="title">En multiplos de 10</h3>
+                    <input class="title" type="contraseña" disabled id="monto">
+                    <div class="boxContainer">
+                        <div class="box">
+                        </div>
+                        <div class="box">
+                            <h3 class="optionsRight">Confirmar</h3>
+                            <h3 class="optionsRight">Corregir</h3>
+                            <h3 class="optionsRight">Cancelar</h3>
+                        </div>
+                    </div>
+                </section>
+                <section id="pantalla4.2" class="pantallacentral" style="display: none;">
+                    <h2 class="title">DISCULPE</h2>
+                    <h3 class="title">Area en mantenimiento, ingrese más tarde</h3>
+                    <div class="boxContainer">
+                        <div class="box">
+                        </div>
+                        <div class="box">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3 class="optionsRight">Cancelar</h3>
+                        </div>
+                    </div>
+                </section>
+                <section id="pantalla5" class="pantallacentral" style="display: none;">
+                    <h2 class="title">Transaccion Procesada</h2>
+                    <h3 class="title">¿Desea realizar otra operacion?</h3>
+                    <div class="boxContainer">
+                        <div class="box">
+                        </div>
+                        <div class="box">
+                            <br>
+                            <br>
+                            <br>
+                            <h3 class="optionsRight">Sí</h3>
+                            <h3 class="optionsRight">No</h3>
+                        </div>
+                    </div>
+                </section>
+                <section id="pantalla6" class="pantallacentral" style="display: none;">
+                    <h2 class="title">GRACIAS</h2>
+                    <h3 class="title">HASTA LUEGO</h3>
+                    <div class="boxContainer">
+                        <div class="box">
+                        </div>
+                        <div class="box">
+                        </div>
+                    </div>
+                </section>
                 <section id="botderecha" class="groupbot">
                     <button id="flechaderecha1" class="boton">
                         <img class="flecha" src="/imagenes/flechainvertida.png" alt="">
@@ -101,21 +220,21 @@
             </section>
             <section id="Inferior">
                 <section id="tecladonum">
-                    <button class="tecla" onclick="add('1')">1</button>
-                    <button class="tecla" onclick="add('2')">2</button>
-                    <button class="tecla" onclick="add('3')">3</button>
-                    <button class="tecla" onclick="add('4')">4</button>
-                    <button class="tecla" onclick="add('5')">5</button>
-                    <button class="tecla" onclick="add('6')">6</button>
-                    <button class="tecla" onclick="add('7')">7</button>
-                    <button class="tecla" onclick="add('8')">8</button>
-                    <button class="tecla" onclick="add('9')">9</button>
+                    <button id="n1" class="tecla" onclick="add('1')">1</button>
+                    <button id="n2" class="tecla" onclick="add('2')">2</button>
+                    <button id="n3" class="tecla" onclick="add('3')">3</button>
+                    <button id="n4" class="tecla" onclick="add('4')">4</button>
+                    <button id="n5" class="tecla" onclick="add('5')">5</button>
+                    <button id="n6" class="tecla" onclick="add('6')">6</button>
+                    <button id="n7" class="tecla" onclick="add('7')">7</button>
+                    <button id="n8" class="tecla" onclick="add('8')">8</button>
+                    <button id="n9" class="tecla" onclick="add('9')">9</button>
                     <button class="tecla"></button>
-                    <button class="tecla" onclick="add('0')">0</button>
-                    <button class="tecla" onclick="add('.')">.</button>
+                    <button id="n0" class="tecla" onclick="add('0')">0</button>
+                    <button id="np" class="tecla" onclick="add('.')">.</button>
                 </section>
                 <section id="comando">
-                    <button id="comdcancel" class="comdopciones" >Cancel</button>
+                    <button id="comdcancel" class="comdopciones">Cancel</button>
                     <button id="comdclear" class="comdopciones" onclick="clearData()">Clear</button>
                     <button id="comdok" class="comdopciones" onclick="login()">Ok</button>
                     <button id="comdvacio" class="comdopciones"></button>
