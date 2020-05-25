@@ -4,12 +4,12 @@ var inicial;
 var cash;
 const btnleft1 = document.getElementById("flechaizquierda1"); //Esta es una instancia de Boton izquierda 1
 const btnleft2 = document.getElementById("flechaizquierda2"); //Esta es una instancia de Boton izquierda 2
-const btnleft3 = document.getElementById("flechaizquierda3");
-const btnleft4 = document.getElementById("flechaizquierda4");
-const btnright1 = document.getElementById("flechaderecha1");
-const btnright2 = document.getElementById("flechaderecha2");
-const btnright3 = document.getElementById("flechaderecha3");
-const btnright4 = document.getElementById("flechaderecha4");  //Esta es una instancia de Boton derecha 4
+const btnleft3 = document.getElementById("flechaizquierda3"); //Esta es una instancia de Boton izquierda 3
+const btnleft4 = document.getElementById("flechaizquierda4"); //Esta es una instancia de Boton izquierda 4
+const btnright1 = document.getElementById("flechaderecha1"); //Esta es una instancia de Boton derecha 1
+const btnright2 = document.getElementById("flechaderecha2"); //Esta es una instancia de Boton derecha 2
+const btnright3 = document.getElementById("flechaderecha3"); //Esta es una instancia de Boton derecha 3
+const btnright4 = document.getElementById("flechaderecha4"); //Esta es una instancia de Boton derecha 4
 const btnm1 = document.getElementById("n1");
 const btnm2 = document.getElementById("n2");
 const btnm3 = document.getElementById("n3");
@@ -259,7 +259,7 @@ function exactoScreen2(money){
         monto.value = "No es multiplo de 10";
         setTimeout(function(){
             monto.setAttribute("type","contraseña");
-        monto.value="";},5000);
+        monto.value="";},3000);
     }
     
 }
