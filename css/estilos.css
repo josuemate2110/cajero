@@ -42,6 +42,24 @@ body{
             border-color: rgb(100, 100, 100);
             border-style: solid;     
 }
+.title{
+            text-align: center;
+}
+.boxContainer{
+            display: flex;
+            align-items: stretch;
+}
+.box{
+            width: 50%;
+}
+.optionsLeft{
+            margin-left: 3%;
+            text-align: left;
+}
+.optionsRight{
+            margin-right: 3%;
+            text-align: right;
+}
 #botderecha{
             margin-top: 100px;
             margin-left: 8px;

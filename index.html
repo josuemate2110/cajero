@@ -15,7 +15,7 @@
         <section>
             <section id="Superior">
                 <section id="botizquierda" class="groupbot">
-                    <button id="flechaizquierda1" class="boton">
+                    <button id="flechaizquierda1" class="boton" onclick="retiroScreen()">
                         <img class="flecha" src="/imagenes/flecha.png" alt="">
                     </button>
                     <button id="flechaizquierda2" class="boton">
@@ -37,11 +37,52 @@
                     </header>
                 </section>
                 <section id="pantalla2" class="pantallacentral" style="display: none;">
-                        <h2>MENU PRINCIPAL</h2>
-                        <br>
-                        <h3>Retiro        Transferencia</h3>
-                        <h3>Consultas</h3>
-                        <h3>Operaciones   Movimientos</h3>
+                    <h2 class="title">MENU PRINCIPAL</h2>
+                    <br>
+                    <div class="boxContainer">
+                        <div class="box">
+                            <h3 class="optionsLeft">Retiro</h3>
+                            <h3 class="optionsLeft">Consultas</h3>
+                            <h3 class="optionsLeft">Operaciones</h3>
+                        </div>
+                        <div class="box">
+                            <h3 class="optionsRight">Transferencias</h3>
+                            <h3 class="optionsRight">Movimientos</h3>
+                        </div>
+                    </div>
+                </section>
+                <section id="pantalla3" class="pantallacentral" style="display: none;">
+                    <h2 class="title">RETIRO</h2>
+                    <br>
+                    <div class="boxContainer">
+                        <div class="box">
+                            <h3 class="optionsLeft">Retiro Soles</h3>
+                        </div>
+                        <div class="box">
+                            <h3 class="optionsRight">Retiro Dolares</h3>
+                            <br>
+                            <br>
+                            <br>
+                            <h3 class="optionsRight">Cancelar</h3>
+                        </div>
+                    </div>
+                </section>
+                <section id="pantalla4" class="pantallacentral" style="display: none;">
+                    <h2 class="title">RETIRO</h2>
+                    <br>
+                    <div class="boxContainer">
+                        <div class="box">
+                            <h3 class="optionsLeft">S/.20</h3>
+                            <h3 class="optionsLeft">S/.150</h3>
+                            <h3 class="optionsLeft">S/.300</h3>
+                        </div>
+                        <div class="box">
+                            <h3 class="optionsRight">S/.100</h3>
+                            <h3 class="optionsRight">S/.200</h3>
+                            <h3 class="optionsRight">Otra Cantidad</h3>
+                            <h3 class="optionsRight">Cancelar</h3>
+                        </div>
+                    </div>
                 </section>
                 <section id="botderecha" class="groupbot">
                     <button id="flechaderecha1" class="boton">
@@ -53,7 +94,7 @@
                     <button id="flechaderecha3" class="boton">
                         <img class="flecha" src="/imagenes/flechainvertida.png" alt="">
                     </button>
-                    <button id="flechaderecha4" class="boton">
+                    <button id="flechaderecha4" class="boton" onclick="backMain()">
                         <img class="flecha" src="/imagenes/flechainvertida.png" alt="">
                     </button>
                 </section>
@@ -74,7 +115,7 @@
                     <button class="tecla" onclick="add('.')">.</button>
                 </section>
                 <section id="comando">
-                    <button id="comdcancel" class="comdopciones">Cancel</button>
+                    <button id="comdcancel" class="comdopciones" >Cancel</button>
                     <button id="comdclear" class="comdopciones" onclick="clearData()">Clear</button>
                     <button id="comdok" class="comdopciones" onclick="login()">Ok</button>
                     <button id="comdvacio" class="comdopciones"></button>
