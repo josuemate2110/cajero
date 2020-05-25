@@ -29,7 +29,10 @@ body{
             margin-left: 15px;
             margin-right: 8px;
 }
-#pantallacentral{
+#titulo{
+            text-align: center;
+}
+.pantallacentral{
             width: 500px;
             height: 300px;
             margin-top: 5px;

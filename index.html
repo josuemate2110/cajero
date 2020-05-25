@@ -28,8 +28,20 @@
                         <img class="flecha" src="/imagenes/flecha.png" alt="">
                     </button>
                 </section>
-                <section id="pantallacentral">
-
+                <section id="pantalla1" class="pantallacentral">
+                    <header id="titulo">
+                        <h2>BIENVENIDO AL BBVA</h2>
+                        <h3>Por favor digite su clave:</h3>
+                        <input type="password" disabled id="data">
+                        <p id="mensaje"></p>
+                    </header>
+                </section>
+                <section id="pantalla2" class="pantallacentral" style="display: none;">
+                        <h2>MENU PRINCIPAL</h2>
+                        <br>
+                        <h3>Retiro        Transferencia</h3>
+                        <h3>Consultas</h3>
+                        <h3>Operaciones   Movimientos</h3>
                 </section>
                 <section id="botderecha" class="groupbot">
                     <button id="flechaderecha1" class="boton">
@@ -48,23 +60,23 @@
             </section>
             <section id="Inferior">
                 <section id="tecladonum">
-                    <button class="tecla">1</button>
-                    <button class="tecla">2</button>
-                    <button class="tecla">3</button>
-                    <button class="tecla">4</button>
-                    <button class="tecla">5</button>
-                    <button class="tecla">6</button>
-                    <button class="tecla">7</button>
-                    <button class="tecla">8</button>
-                    <button class="tecla">9</button>
+                    <button class="tecla" onclick="add('1')">1</button>
+                    <button class="tecla" onclick="add('2')">2</button>
+                    <button class="tecla" onclick="add('3')">3</button>
+                    <button class="tecla" onclick="add('4')">4</button>
+                    <button class="tecla" onclick="add('5')">5</button>
+                    <button class="tecla" onclick="add('6')">6</button>
+                    <button class="tecla" onclick="add('7')">7</button>
+                    <button class="tecla" onclick="add('8')">8</button>
+                    <button class="tecla" onclick="add('9')">9</button>
                     <button class="tecla"></button>
-                    <button class="tecla">0</button>
-                    <button class="tecla">.</button>
+                    <button class="tecla" onclick="add('0')">0</button>
+                    <button class="tecla" onclick="add('.')">.</button>
                 </section>
                 <section id="comando">
                     <button id="comdcancel" class="comdopciones">Cancel</button>
-                    <button id="comdclear" class="comdopciones">Clear</button>
-                    <button id="comdok" class="comdopciones">Ok</button>
+                    <button id="comdclear" class="comdopciones" onclick="clearData()">Clear</button>
+                    <button id="comdok" class="comdopciones" onclick="login()">Ok</button>
                     <button id="comdvacio" class="comdopciones"></button>
                 </section>
                 <section id="extras">
@@ -89,6 +101,7 @@
         </section>
 
     </div>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
