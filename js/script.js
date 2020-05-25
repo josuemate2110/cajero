@@ -241,9 +241,10 @@ function exactoScreen(money){
     cash = cash - money;
 }
 function exactoScreen2(money){
-    document.getElementById("pantalla4.1").style.display="none";
-    document.getElementById("pantalla5").style.display="block";
+    monto.value="";
     if (money % 10 == 0) {
+        document.getElementById("pantalla4.1").style.display="none";
+        document.getElementById("pantalla5").style.display="block";
         btnleft1.setAttribute("onclick","exactoScreen('0')");       
         btnleft2.setAttribute("onclick","exactoScreen('0')");
         btnleft3.setAttribute("onclick","exactoScreen('0')");
@@ -252,9 +253,13 @@ function exactoScreen2(money){
         btnright2.setAttribute("onclick","exactoScreen('0')");
         btnright3.setAttribute("onclick","otheroperation()");
         btnright4.setAttribute("onclick","finalScreen()")
-        cash = cash - money; 
+        cash = cash - money;     
     } else {
-        
+        monto.setAttribute("type","text")
+        monto.value = "No es multiplo de 10";
+        setTimeout(function(){
+            monto.setAttribute("type","contraseña");
+        monto.value="";},5000);
     }
     
 }
@@ -271,6 +276,7 @@ function backSolesScreen(){
     btnright4.setAttribute("onclick","backRetiroScreen()");
 }
 function cantidadScreen(){
+    monto.value="";
     document.getElementById("pantalla4").style.display="none";
     document.getElementById("pantalla4.1").style.display="block";
     btnm1.setAttribute("onclick","plus('1')");
@@ -290,7 +296,6 @@ function cantidadScreen(){
     btnleft4.setAttribute("onclick","cantidadScreen()");
     btnright1.setAttribute("onclick","cantidadScreen()");
     btnright2.setAttribute("onclick","exactoScreen2(document.getElementById('monto').value)");
-    monto.value="";
     btnright3.setAttribute("onclick","cantidadScreen()");
     btnright4.setAttribute("onclick","backSolesScreen()");
 }
